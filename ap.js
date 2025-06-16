@@ -588,4 +588,107 @@
 // else{console.log('sorry the correct number was x')}
 // _____________________________________________________________________________________________
 // ques no 38 
-// 
+//  Concatenate Two Strings
+// Description:
+// Write a program that takes two strings:
+// let firstName = "John";
+// let lastName = "Doe";
+// Use .concat() to combine them into a single string like "John Doe" 
+// (with a space in between) and print the result.
+// ans 
+// let firstString = 'John';
+// let lastString = 'Doe';
+// let result = firstString.concat(' ' + lastString);
+// console.log(result);
+//_______________________________________________________________________________________________
+// ques no 39
+//  Concatenate Arrays
+// Description:
+// Write a program that uses .concat() to join two arrays:
+// let fruits = ["apple", "banana"];
+// let vegetables = ["carrot", "tomato"];
+// ans 
+// let fruits = ['apple','banana'];
+// let vegetables = ['carrot','tomato'];
+// let array = fruits.concat(vegetables);
+// console.log(array);
+// __________________________________________________________________________________________________
+// ques no 40
+// combine 5 string by concat();
+// ans 
+// let str1 = 'I';
+// let str2 = 'love';
+// let str3 = 'my';
+// let str4 = 'friend';
+// let str5 = 'most.';
+// let sentence = str1.concat(' ',str2,' ',str3,' ',str4,' ',str5);
+// console.log(sentence);
+// _________________________________________________________________________________________________
+// ques no 41
+//  Slice Part of a String
+// Description:
+// Given this string:
+// let text = "JavaScript is awesome!";
+// Use .slice() to extract the word "JavaScript" and print it.
+// ans 
+// let text = 'Javascript is awesome';
+//      text = text.slice(0,10);
+//      console.log(text);
+// __________________________________________________________________________________________________
+// ques no 42
+// Check Either Condition (OR)
+// Description:
+// Write a program that checks if a number is either less than 10 OR greater than 50.
+// Example:
+// let number = 8; // true, because 8 < 10
+// Print true if the condition is true, otherwise print false.
+// ans 
+// let enterNumber = Number(prompt('enter number'));
+// let flag = true;
+// if(enterNumber < 10 || enterNumber > 50){flag = true;
+//     console.log(flag)
+// }
+// else{flag = false;
+//     console.log(flag)
+// }
+// ______________________________________________________________________________________
+// ques 43 
+// Check Both Conditions (AND)
+// Description:
+// Write a program that checks if a number is greater than 10 AND less than 20.
+// Example:
+// let number = 15; // true
+// Print true if both conditions are true, otherwise print false.
+// ans 
+// let enterNumber = parseFloat(prompt('enter a number'));
+// let flag = true;
+// if(enterNumber > 10 && enterNumber < 20){flag = true;
+//     console.log(flag)
+// }
+// else{flag = false;
+//     console.log(flag)
+// }
+// _________________________________________________________________________________________________
+// ques no 44
+// Check Age and Citizenship
+// Description:
+// Ask the user’s age and citizenship status.
+
+// If the age is 18 or above, then:
+
+// If the citizenship is "Pakistan", print "You can vote in Pakistan."
+
+// Else, print "You are eligible by age but not a citizen of Pakistan."
+
+// If the age is below 18, print "You are not eligible to vote."
+
+// let age = 20;
+// let citizenship = "Pakistan";
+// ans
+// let enterAge = parseFloat(prompt('enter age'));
+// if(enterAge >= 18){let citizenship = prompt('enter citizenship');
+                    
+//     if(citizenship === 'Pakistan'){console.log('you can vote in pakistan')}
+//     else{console.log('you are eligible by vote but not a citizen of pakistan')}
+// }
+// else{console.log('you are not eligible to vote')}
