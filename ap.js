@@ -692,3 +692,215 @@
 //     else{console.log('you are eligible by vote but not a citizen of pakistan')}
 // }
 // else{console.log('you are not eligible to vote')}
+// _________________________________________________________________________________________
+// ques no 45
+//  Display Current Date and Time
+// Description:
+// Write a program that creates a Date object for the current date and time.
+// Print the full date and time to the console.
+// ans 
+// let current = Date();
+// console.log(current);
+// console.log(typeof current);
+//   current = new Date();
+//   console.log(typeof current);
+// ________________________________________________________________________________________
+// ques no 46
+//  Get Today’s Year, Month, and Day
+// Description:
+// Create a Date object for today.
+// Print only the year, the month (note: months are zero-based), and the date of the month separately.
+
+// Example output:
+// Year: 2025
+// Month: 5   // (June, because January is 0)
+// Date: 16
+// ans 
+// let current = new Date();
+// let year = current.getFullYear();
+// let month = current.getMonth();
+// let date = current.getDate();
+// console.log(year);
+// console.log(month);
+// console.log(date);
+// _________________________________________________________________________________________________
+// ques no 47
+// Create a Specific Date
+// Description:
+// Create a Date object for your birthday (or any specific date).
+// Print it to the console.
+// Example:
+// let birthday = new Date('2000-12-25');
+// console.log(birthday);
+// ans 
+// let current = new Date();
+// let birthday = new Date('01 May 1985');
+// console.log(birthday)
+// ____________________________________________________________________________________________
+// ques no 48
+//  Get the Day of the Week
+// Description:
+// Create a Date object for today and get the day of the week (0 for Sunday, 6 for Saturday).
+// Print it to the console.
+// Example output:
+// Day of the week: 1   // (Monday)
+// ans 
+// let dayName = ['sun','mon','wed','tues','wed','thurs','fri','sat'];
+// let current = new Date();
+// let day = current.getDay();
+// console.log(day);
+// let final = dayName[day];
+// console.log(final);
+// _________________________________________________________________________________________________
+// ques no 49
+//  Add Days to Today
+// Description:
+// Create a Date object for today.
+// Add 7 days to it and print the new date.
+// date.setDate(date.getDate() + 7);
+// ans 
+// let current = new Date();
+// let date = current.getDate();
+//    date = date + 7;
+//    console.log(date);
+// __________________________________________________________________________________________________
+// ques no 50
+//  Get Hours, Minutes, and Seconds
+// Description:
+// Create a Date object for the current time.
+// Print only the hours, minutes, and seconds separately.
+
+// Hours: 19
+// Minutes: 45
+// Seconds: 30
+// ans 
+// let current = new Date();
+// let hours = current.getHours();
+// console.log(hours);
+// let minutes = current.getMinutes();
+// console.log(minutes);
+// let seconds = current.getSeconds();
+// console.log(seconds);
+// let milliSecods = current.getMilliseconds();
+// console.log(milliSecods);
+// _________________________________________________________________________________________________
+// ques no 51
+// Compare Two Dates
+// Description:
+// Create two Date objects — one for today and one for January 1, 2025.
+// Check if today’s date is before January 1, 2025, and print true or false.
+
+// Hint: use .getTime() or simply compare directly.
+// ans 
+// let current = new Date();
+// let date = current.toLocaleDateString();
+// console.log(date);
+// let anotherDate = new Date('01 January 2025');
+//     anotherDate = anotherDate.toLocaleDateString();
+//     console.log(anotherDate);
+//     let flag = true;
+//     if(date > anotherDate){flag = true;
+//         console.log(flag)
+//     }
+//     else{flag = false;
+//         console.log(flag)
+//     }
+// _____________________________________________________________________________________________
+// ques no 52
+//  Get Time in Milliseconds
+// Description:
+// Create a Date object for the current date and time.
+// Print the time in milliseconds since January 1, 1970 (the Unix Epoch).
+
+// Hint: .getTime()
+// ans 
+// let current = new Date();
+// let time = current.getTime();
+// console.log(time);
+// let year = (time / 1000 / 60 /60 /24/30/12);
+// console.log(year)
+// ________________________________________________________________________________________
+// ques no 53
+// Format Date as YYYY-MM-DD
+// Description:
+// Create a Date object for today.
+// Extract year, month, and date, and print them as YYYY-MM-DD.
+// (💡 Remember: add 1 to the month because it’s zero-based!)
+// Example output:
+// 2025-06-16
+// ans 
+ let current = new Date();
+let year = current.getFullYear();
+ let month = current.getMonth();
+     month = month + 1;
+     let  date = current.getDate();
+     let result = year + '-'+'0'+ month + '-' + date;
+     console.log(result);
+// ____________________________________________________________________________________________
+// ques no 54
+// Get Yesterday’s Date
+// Description:
+// Create a Date object for today.
+// Subtract one day and print yesterday’s date.
+
+// Hint
+//  date.setDate(date.getDate() - 1);
+//  ans 
+//  let current = new Date();
+// let date = current.getDate();
+// let result = current.setDate(current.getDate()-1);
+// console.log(result);
+// ✅ Create a Date object for today
+// let today = new Date();
+
+// // ✅ Subtract one day
+// today.setDate(today.getDate() - 1);
+
+// // ✅ Print yesterday’s date
+// console.log(today);
+// __________________________________________________________________________________________
+// ques no 55
+// Get the Time Zone Offset
+// Description:
+// Create a Date object for the current date and time.
+// Print the time zone offset in minutes (difference from UTC).
+// (Hint: use .getTimezoneOffset())
+// Example output:
+// Timezone Offset: -300  // means UTC+5
+// ans
+// let current = new Date();
+// let time = current.getTimezoneOffset();
+// console.log(time);
+// _________________________________________________________________________________________
+// ques no 56
+// Find the Number of Days Between Two Dates
+// Description:
+// Create two Date objects — for example, startDate (your birthday) and endDate (today).
+// Calculate how many days are between them and print it.
+
+// Hint:
+// 1 day = 24 * 60 * 60 * 1000 milliseconds.
+// ans 
+// let current = new Date();
+// let birthday = new Date('13 June 2025');
+// let currentMilliseconds = current.getTime();
+// console.log(currentMilliseconds);
+// let birthdayMilliSecods = birthday.getTime();
+// let days = currentMilliseconds - birthdayMilliSecods;
+// console.log(days);
+//  let result = days/(1000 * 60 *60 *24);
+// console.log(result)
+// ________________________________________________________________________________________
+// ques no 57
+// Get the First Day of This Year
+// Description:
+// Create a Date object for January 1st of this year.
+// Print it to the console.
+
+// Example:
+// let firstDay = new Date(2025, 0, 1); // January is 0
+// console.log(firstDay);
+// ans 
+// let current = new Date();
+// let firstDay = new Date(' 1 January 2025');
+// console.log(firstDay)
